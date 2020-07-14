@@ -17,20 +17,21 @@
 
     <!-- CSS  StyleSheet  -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Ozeylo Tastes</title>
 </head>
 <body>
 
     <!-- Navbar -->
-    <section id="navbar" class="cover">
-    <nav class="navbar container navbar-expand-lg navbar-inverse text-white  navbar-trans">
+    <section id="home" class="cover">
+    <nav class="navbar container navbar-expand-lg navbar-trans navbar-inverse navbar-trans text-white">
         <a href="#home" class="navbar-brand logo">Ozeylo Tastes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse float-right  navbar-collapse mr-auto" id="navbarsExample08">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarsExample08">
+          <ul class="navbar-nav navbar-right ml-auto">
             <li class="nav-item ">
               <a class="nav-link" href="#about">About Us</a>
             </li>
@@ -49,7 +50,7 @@
       <!--Hero Section  -->
       <div class="hero-section mb-5 ">
         <div class="text-center">
-            <p class="hero-heading">Welcome To Ozelyo-Taste!</p>
+            <p class="hero-heading">Welcome To <wbr> Ozelyo-Tastes!</p>
             <h1>IT’S NICE TO MEET YOU</h1>
             <button> <a href="#contact">ORDER NOW</a></button>
         </div>
@@ -61,7 +62,7 @@
     <!-- About Section -->
     <section id="about" class="container my-5 mb-5 ">
         <div class="about-img" data-aos="fade-right"  aos-duration ="1500">
-            <img src="./assets/images/about-bg-img.svg" alt="">
+            <img src="./assets/images/about-bg-img.svg" alt="about-img">
         </div>
         <div class="about-content" data-aos="fade-left" aos-duration ="1500">
             <h2 class="about-content-heading">About Us</h2>
@@ -71,7 +72,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="container my-5">
+    <section id="services" class="container mt-5 ">
         <div class="text-center services-heading">
             <h2>Services</h2>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -304,7 +305,7 @@
         </div>
         <div class="contact-form col-sm-6">
             <h3>Get In Touch</h3>
-            <form action="">
+            <form action="./assets/contact.php" method="POST">
                 <input type="text" placeholder="Your Name" class="form-control"><br>
                 <input type="email" placeholder="Your Email" class="form-control"><br>
                 <textarea name="message" cols="20" rows="5" class="form-control" placeholder="Write a message"></textarea>

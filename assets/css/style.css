@@ -4,6 +4,7 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 body{
@@ -11,6 +12,7 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 h1,h2,h3{
@@ -22,6 +24,11 @@ a{
     color: inherit;
 }
 
+a:hover{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
 button{
     border: 0;
     border-radius: 6px;
@@ -31,6 +38,11 @@ button{
     margin: 1.5rem 0;
 }
 
+button:hover{
+    transform: scale(1.1);
+    color: #f2f2f2;
+}
+
 .navbar-trans > .logo, .logo{
     color: #f2c44c;
     border-bottom: 2px solid #f2c44c;
@@ -38,15 +50,22 @@ button{
 }
 .cover{
 
-    background: url('../images/bg-img.svg');
-    
+    background: url('../images/bg-her.png');
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link:hover{
+    color: #f2c44c;
+}
+
 .hero-section{
-    height: 85vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,6 +139,9 @@ button{
     .cover{
         background-position: center;
     }
+    .hero-heading{
+        font-size: 39px;
+    }
     #about{
         flex-direction: column;
     }
@@ -128,10 +150,13 @@ button{
         width: 85%;
         align-self: center;
     }
+    .about-img img{
+        width: 85%;
+    }
     .about-content{
         width: 100%;
     }
     .contact-form{
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
 }
