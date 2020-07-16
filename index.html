@@ -24,7 +24,7 @@
 
     <!-- Navbar -->
     <section id="home" class="cover">
-    <nav class="navbar container navbar-expand-lg navbar-trans navbar-inverse navbar-trans text-white">
+    <nav class="navbar container navbar-expand-lg  navbar-trans text-white">
         <a href="#home" class="navbar-brand logo">Ozeylo Tastes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,9 @@
         <div class="text-center">
             <p class="hero-heading">Welcome To <wbr> Ozelyo-Tastes!</p>
             <h1>IT’S NICE TO MEET YOU</h1>
-            <button> <a href="#contact">ORDER NOW</a></button>
+            <a href="#contact">
+            <button> ORDER NOW</button>
+            </a>
         </div>
     </div>
       
@@ -134,92 +136,7 @@
     </section>
 
     <!-- Recipes Section -->
-    <div id="recipes" class="container my-5">
-        <div class="text-center recipe-heading">
-            <h2>Delicious Recipes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="recipe-content">
-            <div class="row">
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-1.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Cupcake</p> 
-                </div>
-                </div>
-            </div>        
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-2.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Cheesecake</p>
-            
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-3.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Cinnamon Roll</p>
-            
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-4.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Donuts</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-5.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Candies</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-6.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Waffles with cream</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-7.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Wedding cakes</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-8.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Brown Coffee</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6"  data-aos="zoom-in" aos-duration = "1500">
-                <div class="card">
-                <img src="./assets/images/recipe-9.png" alt="recipe" class="card-img-top">
-                    <div class="card-body">
-                    <p class="card-title">Brown Bread</p>
-            
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
+     
     <!-- Team Section -->
     <div id="team">
         <div class="container">
@@ -305,12 +222,12 @@
         </div>
         <div class="contact-form col-sm-6">
             <h3>Get In Touch</h3>
-            <form action="./assets/contact.php" method="POST">
-                <input type="text" placeholder="Your Name" class="form-control"><br>
-                <input type="email" placeholder="Your Email" class="form-control"><br>
+            <form action="/assets/contact.php"  method="post">
+                <input type="text" placeholder="Your Name" name = "name" class="form-control"><br>
+                <input type="email" placeholder="Your Email" name= "email" class="form-control"><br>
                 <textarea name="message" cols="20" rows="5" class="form-control" placeholder="Write a message"></textarea>
+                <button class="text-body" type="submit" >Send Message</button>
             </form>
-            <button class="text-body">Send Message</button>
         </div>
     </div>        
     </div>

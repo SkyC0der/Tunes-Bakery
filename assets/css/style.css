@@ -1,3 +1,4 @@
+/* Basic Styling */
 *{
     box-sizing: border-box;
 }
@@ -43,17 +44,19 @@ button:hover{
     color: #f2f2f2;
 }
 
-.navbar-trans > .logo, .logo{
-    color: #f2c44c;
-    border-bottom: 2px solid #f2c44c;
-    font-size: 26px;
-}
 .cover{
 
     background: url('../images/bg-her.png');
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
+}
+
+/* Navbar */
+.navbar-trans > .logo, .logo{
+    color: #f2c44c;
+    border-bottom: 2px solid #f2c44c;
+    font-size: 26px;
 }
 
 .navbar-toggler-icon {
@@ -63,6 +66,8 @@ button:hover{
 .nav-link:hover{
     color: #f2c44c;
 }
+
+/* Hero-section */
 
 .hero-section{
     height: 95vh;
@@ -76,6 +81,8 @@ button:hover{
     font-size: 36px;
     font-weight: 600;
 }
+
+/* About Section */
 
 #about{
     display: flex;
@@ -102,11 +109,13 @@ button:hover{
 }
 
 
-
 .card{
     margin: 1rem 0;
     border: 0;
 }
+
+/* Team Section */
+
 #team{
     background-color: #f2f2f2;
 }
@@ -127,6 +136,8 @@ button:hover{
 .team-profile-bio{
     text-align: center;
 }
+
+/* Contact Section */
 
 #contact{
     display: flex;
