@@ -20,18 +20,20 @@ print_r($_POST);
 
 
 if(isset($_POST)) {
-    $email="'".$_POST['email']."'";
-    $message= "'".$_POST['message']."'";
+  
+    $name = $_POST['name'];
+    $email=$_POST['email'];
+    $message=$_POST['message'];
 
-    $query = "INSERT INTO `form_data` (`email`, `message`) VALUES ('$email', '$message')";
-
+    $query = "INSERT INTO `form_data` (`name`, `email`, `message`) VALUES ('$name','$email', '$message')";
+    
     if (mysqli_query($dbconnect, $query)) {
         echo "Order received, will get back to you soon.";
     }else{
         mysqli_error($dbconnect);
         echo $message;
         echo $email;
-        die('An error occured. Your order has not yet submitted.');
+        die('An error occured. Your order was not submitted.');
     }
 }
 

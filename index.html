@@ -222,11 +222,11 @@
         </div>
         <div class="contact-form col-sm-6">
             <h3>Get In Touch</h3>
-            <form action="/assets/contact.php"  method="post">
-                <input type="text" placeholder="Your Name" name = "name" class="form-control"><br>
-                <input type="email" placeholder="Your Email" name= "email" class="form-control"><br>
-                <textarea name="message" cols="20" rows="5" class="form-control" placeholder="Write a message"></textarea>
-                <button class="text-body" type="submit" >Send Message</button>
+            <form action="/assets/php/contact.php"  method="post">
+                <input type="text" placeholder="Your Name" id="name" name = "name" class="form-control"><br>
+                <input type="email" placeholder="Your Email" id="email" name= "email" class="form-control"><br>
+                <textarea name="message" cols="20" rows="5"  id="message" class="form-control" placeholder="Write a message"></textarea>
+                <button class="text-body" name="submit" >Send Message</button>
             </form>
         </div>
     </div>        
