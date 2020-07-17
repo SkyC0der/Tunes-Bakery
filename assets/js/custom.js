@@ -11,7 +11,7 @@ $('#form').submit(function(e){
         success: function() {
             swal({
                 title: "Thank You!",
-                text: 'Order received, will get back to you soon.',
+                text: 'Message received, will get back to you soon.',
                 icon: "success",
                 button: "Ok",
             })
@@ -19,7 +19,7 @@ $('#form').submit(function(e){
         error: function() {
             swal({
                 title: "Oops!",
-                text: 'An error occured. Your order has not been submitted.',
+                text: 'An error occured. Your message was not been submitted.',
                 icon: "warning",
                 button: "Ok",
             })
