@@ -6,7 +6,7 @@ $('#form').submit(function(e){
     e.preventDefault();
     $.ajax({
         type: 'POST',
-        url: 'contact-form.php',
+        url: '/assets/php/contact-form.php',
         data: $('#form').serialize(),
         success: function() {
             swal({
